@@ -16,8 +16,9 @@ class Author
     private ?int $id = null;
 
     #[ORM\Column(length: 190)]
-    private ?string $firsname = null;
+    private ?string $firstname = null;
 
+    
     #[ORM\Column(length: 190)]
     private ?string $lastname = null;
 
@@ -34,17 +35,18 @@ class Author
         return $this->id;
     }
 
-    public function getFirsname(): ?string
+    public function getfirstname(): ?string
     {
-        return $this->firsname;
+        return $this->firstname;
     }
 
-    public function setFirsname(string $firsname): self
+    public function setFirstname(string $firstname): self
     {
-        $this->firsname = $firsname;
+        $this->firstname = $firstname;
 
         return $this;
     }
+    
 
     public function getLastname(): ?string
     {
